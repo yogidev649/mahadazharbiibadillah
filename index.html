@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MA'HAD AL AZHAR BI'IBADILLAH - Pondok Pesantren Modern & Tahfizh Al-Qur'an 2026</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                            950: '#052e16',
+                        },
+                        brand: {
+                            primary: '#064e3b',
+                            secondary: '#047857',
+                            accent: '#10b981',
+                            gold: '#f59e0b',
+                            goldhover: '#d97706',
+                            softBg: '#f0fdf4'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        arabic: ['Amiri', 'serif']
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'float-delayed': 'float 6s ease-in-out 3s infinite',
+                        'spin-slow': 'spin 12s linear infinite',
+                        'shimmer': 'shimmer 2.5s infinite'
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-15px)' },
+                        },
+                        shimmer: {
+                            '100%': { transform: 'translateX(100%)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        .dark .glass-card {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .dark .glass-nav {
+            background: rgba(6, 78, 59, 0.9);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #064e3b 0%, #10b981 50%, #f59e0b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .dark .gradient-text {
+            background: linear-gradient(135deg, #6ee7b7 0%, #34d399 50%, #fbbf24 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-bg-hero {
+            background: radial-gradient(circle at top right, rgba(16, 185, 129, 0.15), transparent 40%),
+                        radial-gradient(circle at bottom left, rgba(245, 158, 11, 0.10), transparent 40%);
+        }
+        .islamic-pattern {
+            background-image: radial-gradient(#047857 0.75px, transparent 0.75px), radial-gradient(#047857 0.75px, #f0fdf4 0.75px);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+            opacity: 0.15;
+        }
+        .dark .islamic-pattern {
+            background-image: radial-gradient(#10b981 0.75px, transparent 0.75px), radial-gradient(#10b981 0.75px, #032e1d 0.75px);
+            opacity: 0.1;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 font-sans transition-colors duration-300 overflow-x-hidden">
+
+    <!-- Ambient Glowing Orbs Background -->
+    <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-emerald-300/30 dark:bg-emerald-900/20 rounded-full blur-3xl animate-pulse-slow"></div>
+        <div class="absolute top-1/3 -left-40 w-96 h-96 bg-teal-200/30 dark:bg-teal-900/20 rounded-full blur-3xl animate-float"></div>
+        <div class="absolute bottom-1/4 right-10 w-80 h-80 bg-amber-200/20 dark:bg-amber-900/10 rounded-full blur-3xl animate-float-delayed"></div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 transition-all duration-300" id="navbar">
+        <div class="glass-nav border-b border-emerald-100 dark:border-emerald-900/40 shadow-sm">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-20">
+                    <!-- Brand Logo -->
+                    <a href="#beranda" class="flex items-center gap-3 group">
+                        <div class="relative w-12 h-12 rounded-2xl bg-gradient-to-tr from-brand-primary via-emerald-600 to-emerald-400 p-0.5 shadow-md shadow-emerald-900/20 group-hover:scale-105 transition-transform">
+                            <div class="w-full h-full bg-white dark:bg-slate-900 rounded-[14px] flex items-center justify-center text-emerald-700 dark:text-emerald-400">
+                                <i class="fa-solid fa-mosque text-2xl group-hover:rotate-6 transition-transform"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="block font-black text-lg md:text-xl tracking-tight text-brand-primary dark:text-emerald-400 leading-none">MA'HAD AL AZHAR</span>
+                            <span class="block text-xs font-bold tracking-widest text-amber-600 dark:text-amber-400 uppercase mt-1">BI'IBADILLAH</span>
+                        </div>
+                    </a>
+
+                    <!-- Desktop Nav Links -->
+                    <nav class="hidden lg:flex items-center gap-1 xl:gap-2 text-sm font-semibold">
+                        <a href="#beranda" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-200 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/50 transition-all">Beranda</a>
+                        <a href="#profil" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-200 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/50 transition-all">Profil</a>
+                        <a href="#program" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-200 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/50 transition-all">Program</a>
+                        <a href="#fasilitas" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-200 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/50 transition-all">Fasilitas</a>
+                        <a href="#ppdb" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-200 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/50 transition-all">Alur PPDB</a>
+                        <a href="#lokasi" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-200 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/50 transition-all">Lokasi</a>
+                        <a href="#faq" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-200 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/50 transition-all">FAQ</a>
+                    </nav>
+
+                    <!-- Right Header CTA & Controls -->
+                    <div class="hidden sm:flex items-center gap-3">
+                        <button id="themeToggleBtn" onclick="toggleDarkMode()" aria-label="Toggle Dark Mode" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-emerald-100 dark:hover:bg-emerald-900/50 transition-colors">
+                            <i class="fa-solid fa-moon dark:hidden text-lg"></i>
+                            <i class="fa-solid fa-sun hidden dark:block text-amber-400 text-lg"></i>
+                        </button>
+                        <button onclick="openRegistrationModal()" class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-semibold text-white rounded-xl group bg-gradient-to-br from-emerald-600 via-emerald-500 to-amber-500 group-hover:from-emerald-600 group-hover:to-amber-500 hover:shadow-lg hover:shadow-emerald-500/30 transition-all">
+                            <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-emerald-700 dark:bg-slate-900 rounded-[10px] group-hover:bg-opacity-0 flex items-center gap-2">
+                                <i class="fa-solid fa-user-plus text-amber-300"></i>
+                                <span>Daftar PPDB 2026</span>
+                            </span>
+                        </button>
+                    </div>
+
+                    <!-- Mobile Menu Trigger -->
+                    <div class="flex items-center gap-2 lg:hidden">
+                        <button onclick="toggleDarkMode()" aria-label="Toggle Dark Mode" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
+                            <i class="fa-solid fa-moon dark:hidden"></i>
+                            <i class="fa-solid fa-sun hidden dark:block text-amber-400"></i>
+                        </button>
+                        <button id="mobileMenuBtn" onclick="toggleMobileMenu()" aria-label="Open Navigation Menu" class="p-2.5 rounded-xl bg-emerald-50 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 hover:bg-emerald-100 focus:outline-none">
+                            <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobileDrawer" class="hidden lg:hidden bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl border-b border-emerald-100 dark:border-slate-800 transition-all duration-300">
+            <div class="px-4 pt-3 pb-6 space-y-2 font-medium">
+                <a href="#beranda" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-emerald-50 dark:hover:bg-emerald-950/50">Beranda</a>
+                <a href="#profil" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-emerald-50 dark:hover:bg-emerald-950/50">Profil & Visi Misi</a>
+                <a href="#program" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-emerald-50 dark:hover:bg-emerald-950/50">Program Unggulan</a>
+                <a href="#fasilitas" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-emerald-50 dark:hover:bg-emerald-950/50">Fasilitas Modern</a>
+                <a href="#ppdb" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-emerald-50 dark:hover:bg-emerald-950/50">Alur PPDB 2026</a>
+                <a href="#lokasi" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-emerald-50 dark:hover:bg-emerald-950/50">Lokasi Google Maps</a>
+                <a href="#faq" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-emerald-50 dark:hover:bg-emerald-950/50">FAQ</a>
+                <div class="pt-3 border-t border-slate-200 dark:border-slate-800">
+                    <button onclick="toggleMobileMenu(); openRegistrationModal()" class="w-full py-3 bg-gradient-to-r from-emerald-600 to-emerald-700 text-white rounded-xl font-semibold shadow-md flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span>Pendaftaran Online PPDB</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="beranda" class="relative pt-10 pb-20 md:pt-16 md:pb-28 overflow-hidden gradient-bg-hero">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Content Column -->
+                <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+                    
+                    <!-- Islamic Badge -->
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-100/80 dark:bg-emerald-900/40 border border-emerald-300 dark:border-emerald-700/50 backdrop-blur-md shadow-sm">
+                        <span class="flex h-2.5 w-2.5 relative">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                        </span>
+                        <span class="text-xs md:text-sm font-bold tracking-wide text-emerald-800 dark:text-emerald-300 uppercase">
+                            ✨ Penerimaan Santri Baru (PPDB) Tahun Ajaran 2026/2027
+                        </span>
+                    </div>
+
+                    <!-- Arabic Bismillah Calligraphy Subtitle -->
+                    <p class="font-arabic text-2xl md:text-3xl text-emerald-800 dark:text-emerald-300 tracking-wider">
+                        بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+                    </p>
+
+                    <!-- Main Heading -->
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Mewujudkan Generasi <span class="gradient-text">Rabbani, Qur'ani</span> & Berkeahlian Global.
+                    </h1>
+
+                    <!-- Paragraph Description -->
+                    <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Selamat datang di **Ma'had Al Azhar Bi'ibadillah**. Lembaga pendidikan Islam modern bernuansa pesantren unggulan di Tapanuli Selatan, memadukan Sanad Tahfizh Al-Qur'an 30 Juz, Kurikulum IPTEK Modern, serta Penguasaan Bahasa Arab & Inggris.
+                    </p>
+
+                    <!-- Action Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <button onclick="openRegistrationModal()" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-emerald-600 via-emerald-700 to-teal-800 hover:from-emerald-700 hover:to-teal-900 text-white font-bold text-base shadow-xl shadow-emerald-600/30 hover:shadow-emerald-600/50 hover:-translate-y-0.5 transition-all flex items-center justify-center gap-3 group">
+                            <span>Daftar Online Sekarang</span>
+                            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        </button>
+                        <a href="#program" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-100 font-semibold text-base border border-slate-200 dark:border-slate-700 shadow-md transition-all text-center flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-compass text-emerald-600 dark:text-emerald-400"></i>
+                            <span>Jelajahi Program</span>
+                        </a>
+                    </div>
+
+                    <!-- Highlight Badges -->
+                    <div class="pt-6 border-t border-slate-200/80 dark:border-slate-800 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-400">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-emerald-500 text-base"></i>
+                            <span>Akreditasi A Unggul</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-emerald-500 text-base"></i>
+                            <span>Sanad Al-Qur'an Muttashil</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-emerald-500 text-base"></i>
+                            <span>Asrama Modern Ber-AC</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Visual Column (Interactive Card / Illustration) -->
+                <div class="lg:col-span-5 relative">
+                    
+                    <!-- Decorative Islamic Geometry Floating Element -->
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        
+                        <!-- Main Card Preview -->
+                        <div class="glass-card rounded-3xl p-6 sm:p-8 shadow-2xl relative z-10 border border-white/60 dark:border-emerald-900/50 overflow-hidden">
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-amber-400/20 to-transparent rounded-bl-full"></div>
+                            
+                            <!-- School Showcase Image Frame -->
+                            <div class="relative h-64 sm:h-72 rounded-2xl overflow-hidden bg-slate-900 mb-6 group">
+                                <img src="https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?q=80&w=1200&auto=format&fit=crop" alt="Ma'had Al Azhar Bi'ibadillah" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90">
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-4">
+                                    <span class="text-white font-medium text-sm flex items-center gap-2">
+                                        <i class="fa-solid fa-location-dot text-amber-400"></i>
+                                        Tahalak Ujung Gading, Tapanuli Selatan
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- Quick Stats Highlight Badge Inside Image -->
+                            <div class="bg-emerald-50 dark:bg-emerald-950/80 rounded-2xl p-4 border border-emerald-200 dark:border-emerald-800/50 flex items-center justify-between">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold text-lg">
+                                        <i class="fa-solid fa-award"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-slate-500 dark:text-slate-400">Status Kelulusan</p>
+                                        <p class="text-sm font-bold text-slate-800 dark:text-slate-100">100% Lulus PTN & Luar Negeri</p>
+                                    </div>
+                                </div>
+                                <span class="bg-amber-100 dark:bg-amber-900/50 text-amber-800 dark:text-amber-300 text-xs px-3 py-1 rounded-full font-bold">2026 Ready</span>
+                            </div>
+
+                        </div>
+
+                        <!-- Floating Micro Badge 1 -->
+                        <div class="absolute -bottom-6 -left-6 z-20 glass-card p-4 rounded-2xl shadow-xl hidden sm:flex items-center gap-3 border border-emerald-200 dark:border-emerald-800 animate-float">
+                            <div class="w-12 h-12 rounded-xl bg-amber-500 text-white flex items-center justify-center text-xl shadow-lg shadow-amber-500/30">
+                                <i class="fa-solid fa-quran"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-500 dark:text-slate-400">Target Kurikulum</div>
+                                <div class="text-sm font-bold text-slate-800 dark:text-slate-100">Tahfizh 30 Juz & Mutqim</div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Micro Badge 2 -->
+                        <div class="absolute -top-6 -right-6 z-20 glass-card p-4 rounded-2xl shadow-xl hidden sm:flex items-center gap-3 border border-emerald-200 dark:border-emerald-800 animate-float-delayed">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-xl shadow-lg shadow-emerald-600/30">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-500 dark:text-slate-400">Jenjang Pendidikan</div>
+                                <div class="text-sm font-bold text-slate-800 dark:text-slate-100">MTs & MA Terakreditasi</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Stats Counters Bar -->
+            <div class="mt-16 sm:mt-24 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+                <div class="glass-card rounded-2xl p-6 text-center border border-emerald-100 dark:border-emerald-900/30 hover:border-emerald-400 transition-colors">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-emerald-700 dark:text-emerald-400 mb-1" id="counter1">1000+</div>
+                    <div class="text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-400">Santri Active</div>
+                </div>
+                <div class="glass-card rounded-2xl p-6 text-center border border-emerald-100 dark:border-emerald-900/30 hover:border-emerald-400 transition-colors">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-emerald-700 dark:text-emerald-400 mb-1" id="counter2">30</div>
+                    <div class="text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-400">Juz Target Tahfizh</div>
+                </div>
+                <div class="glass-card rounded-2xl p-6 text-center border border-emerald-100 dark:border-emerald-900/30 hover:border-emerald-400 transition-colors">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-emerald-700 dark:text-emerald-400 mb-1" id="counter3">50+</div>
+                    <div class="text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-400">Pengajar Profesional</div>
+                </div>
+                <div class="glass-card rounded-2xl p-6 text-center border border-emerald-100 dark:border-emerald-900/30 hover:border-emerald-400 transition-colors">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-amber-600 dark:text-amber-400 mb-1" id="counter4">100%</div>
+                    <div class="text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-400">Lulusan Berprestasi</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION PROFIL & VISI MISI -->
+    <section id="profil" class="py-20 relative bg-white dark:bg-slate-900 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-extrabold tracking-widest text-emerald-600 dark:text-emerald-400 uppercase bg-emerald-100 dark:bg-emerald-950 px-4 py-1.5 rounded-full">Tentang Pesantren</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-slate-100 mt-3 tracking-tight">
+                    Mengenal Ma'had Al Azhar Bi'ibadillah
+                </h2>
+                <p class="text-slate-600 dark:text-slate-400 mt-4 text-base sm:text-lg">
+                    Komitmen kami menyelenggarakan pendidikan berciri khas pesantren terpadu yang menyeimbangkan antara spiritualitas Al-Qur'an, wawasan sains, serta pembentukan karakter akhlaqul karimah.
+                </p>
+            </div>
+
+            <!-- Grid Visi, Misi & Core Values -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card Visi -->
+                <div class="glass-card rounded-3xl p-8 border border-emerald-100 dark:border-slate-800 shadow-xl hover:-translate-y-1 transition-all">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-600 text-white flex items-center justify-center text-2xl mb-6 shadow-lg shadow-emerald-600/30">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-3">Visi Utama</h3>
+                    <p class="text-slate-600 dark:text-slate-300 leading-relaxed text-sm sm:text-base">
+                        Menjadi Pusat Keunggulan Pendidikan Islam Modern berbasis Al-Qur'an di Sumatera Utara yang melahirkan ulama, cendekiawan, dan pemimpin masa depan berdaya saing global.
+                    </p>
+                </div>
+
+                <!-- Card Misi -->
+                <div class="glass-card rounded-3xl p-8 border border-emerald-100 dark:border-slate-800 shadow-xl hover:-translate-y-1 transition-all md:col-span-1 lg:col-span-2">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-500 text-white flex items-center justify-center text-2xl mb-6 shadow-lg shadow-amber-500/30">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-3">Misi Pendidikan</h3>
+                    <ul class="grid sm:grid-cols-2 gap-4 text-slate-600 dark:text-slate-300 text-sm sm:text-base">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i>
+                            <span>Menyelenggarakan program Tahfizh Al-Qur'an bersanad hingga 30 juz.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i>
+                            <span>Mengintegrasikan Kurikulum Merdeka/Nasional dengan Kitab Turats (Kitab Kuning).</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i>
+                            <span>Mengembangkan lingkungan bahasa aktif Arab dan Inggris dalam aktivitas harian.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i>
+                            <span>Membina kepribadian santri bermoral Islami, mandiri, dan melek teknologi 2026.</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- 4 Nilai Utama (Core Values) -->
+            <div class="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-4">
+                <div class="p-5 rounded-2xl bg-emerald-50/70 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800/40 text-center">
+                    <div class="text-emerald-700 dark:text-emerald-400 font-bold text-lg mb-1">Tahfizh Qur'an</div>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">Mutqim & Bertaqwa</p>
+                </div>
+                <div class="p-5 rounded-2xl bg-emerald-50/70 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800/40 text-center">
+                    <div class="text-emerald-700 dark:text-emerald-400 font-bold text-lg mb-1">Bilingual Mastery</div>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">Arab & Inggris</p>
+                </div>
+                <div class="p-5 rounded-2xl bg-emerald-50/70 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800/40 text-center">
+                    <div class="text-emerald-700 dark:text-emerald-400 font-bold text-lg mb-1">Sains & Digital</div>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">Kurikulum Modern</p>
+                </div>
+                <div class="p-5 rounded-2xl bg-emerald-50/70 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800/40 text-center">
+                    <div class="text-emerald-700 dark:text-emerald-400 font-bold text-lg mb-1">Akhlaqul Karimah</div>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">Adab dan Karakter</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION PROGRAM UNGGULAN -->
+    <section id="program" class="py-20 relative bg-slate-50 dark:bg-slate-950 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-extrabold tracking-widest text-emerald-600 dark:text-emerald-400 uppercase bg-emerald-100 dark:bg-emerald-950 px-4 py-1.5 rounded-full">Pilihan Kurikulum</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-slate-100 mt-3 tracking-tight">
+                    Program Unggulan Pendidikan
+                </h2>
+                <p class="text-slate-600 dark:text-slate-400 mt-4 text-base sm:text-lg">
+                    Dirancang untuk membentuk pribadi yang seimbang antara kecerdasan spiritual, intelektual, dan ketrampilan hidup.
+                </p>
+            </div>
+
+            <!-- Program Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Program 1: Tahfizh Al-Qur'an -->
+                <div class="glass-card rounded-3xl p-6 border border-emerald-100 dark:border-slate-800 shadow-lg hover:-translate-y-2 transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-book-quran"></i>
+                        </div>
+                        <span class="text-xs font-bold text-amber-600 dark:text-amber-400 tracking-wider uppercase">Program Utama</span>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mt-1 mb-3">Tahfizh Qur'an Bersanad</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                            Metode hafalan cepat & mutqim 30 juz dilengkapi bimbingan tajwid tajribi, tahsin, dan pengujian sanad muttashil.
+                        </p>
+                    </div>
+                    <ul class="text-xs text-slate-600 dark:text-slate-400 space-y-2 pt-4 border-t border-slate-200 dark:border-slate-800">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Target 5-10 Juz / Tahun</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Bimbingan Musyrif Khusus</li>
+                    </ul>
+                </div>
+
+                <!-- Program 2: MTs Al-Azhar -->
+                <div class="glass-card rounded-3xl p-6 border border-emerald-100 dark:border-slate-800 shadow-lg hover:-translate-y-2 transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-school"></i>
+                        </div>
+                        <span class="text-xs font-bold text-emerald-600 dark:text-emerald-400 tracking-wider uppercase">Tingkat Pertama</span>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mt-1 mb-3">Madrasah Tsanawiyah (MTs)</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                            Pendidikan kesetaraan SMP/MTs dengan penguatan sains, matematika, bahasa asing, dan dasar-dasar ilmu syariah.
+                        </p>
+                    </div>
+                    <ul class="text-xs text-slate-600 dark:text-slate-400 space-y-2 pt-4 border-t border-slate-200 dark:border-slate-800">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Terakreditasi Resmi Kemenag</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Kelas Lab Digital</li>
+                    </ul>
+                </div>
+
+                <!-- Program 3: MA Al-Azhar -->
+                <div class="glass-card rounded-3xl p-6 border border-emerald-100 dark:border-slate-800 shadow-lg hover:-translate-y-2 transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-user-graduate"></i>
+                        </div>
+                        <span class="text-xs font-bold text-emerald-600 dark:text-emerald-400 tracking-wider uppercase">Tingkat Atas</span>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mt-1 mb-3">Madrasah Aliyah (MA)</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                            Fokus persiapan masuk Perguruan Tinggi Negeri (PTN) favorit Indonesia dan Universitas Timur Tengah (Al-Azhar Kairo, Medina).
+                        </p>
+                    </div>
+                    <ul class="text-xs text-slate-600 dark:text-slate-400 space-y-2 pt-4 border-t border-slate-200 dark:border-slate-800">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Jurusan IPA & Keagamaan</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Trial UTBK / Toefl / Toefl Arab</li>
+                    </ul>
+                </div>
+
+                <!-- Program 4: Bahasa & Kitab Kuning -->
+                <div class="glass-card rounded-3xl p-6 border border-emerald-100 dark:border-slate-800 shadow-lg hover:-translate-y-2 transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-language"></i>
+                        </div>
+                        <span class="text-xs font-bold text-amber-600 dark:text-amber-400 tracking-wider uppercase">Penguatan Dirasah</span>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mt-1 mb-3">Kitab Kuning & Dirasah</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                            Kajian kitab klasik (Nahwu, Shorof, Fiqih, Hadits) dipadukan dengan pemantapan muhadatsah bahasa Arab & Inggris aktif.
+                        </p>
+                    </div>
+                    <ul class="text-xs text-slate-600 dark:text-slate-400 space-y-2 pt-4 border-t border-slate-200 dark:border-slate-800">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Arabic & English Zone</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Pengajaran Sanad Fiqih</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION FASILITAS MODERN -->
+    <section id="fasilitas" class="py-20 relative bg-white dark:bg-slate-900 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-extrabold tracking-widest text-emerald-600 dark:text-emerald-400 uppercase bg-emerald-100 dark:bg-emerald-950 px-4 py-1.5 rounded-full">Sarana & Prasarana</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-slate-100 mt-3 tracking-tight">
+                    Fasilitas Berstandar Modern
+                </h2>
+                <p class="text-slate-600 dark:text-slate-400 mt-4 text-base sm:text-lg">
+                    Menyediakan lingkungan belajar dan tinggal santri yang nyaman, bersih, aman, serta mendukung proses pembelajaran optimal.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Facility Item 1 -->
+                <div class="group relative rounded-3xl overflow-hidden shadow-md border border-slate-100 dark:border-slate-800">
+                    <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?q=80&w=800&auto=format&fit=crop" alt="Asrama Santri" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent p-6 flex flex-col justify-end">
+                        <div class="text-amber-400 text-sm font-semibold mb-1"><i class="fa-solid fa-bed"></i> Nyaman & Bersih</div>
+                        <h3 class="text-xl font-bold text-white">Asrama Modern Ber-AC</h3>
+                        <p class="text-xs text-slate-300 mt-1 opacity-90">Kamar tidur teratur, loker pribadi, dan lingkungan asrama terjaga 24 jam.</p>
+                    </div>
+                </div>
+
+                <!-- Facility Item 2 -->
+                <div class="group relative rounded-3xl overflow-hidden shadow-md border border-slate-100 dark:border-slate-800">
+                    <img src="https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?q=80&w=800&auto=format&fit=crop" alt="Masjid Utama" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent p-6 flex flex-col justify-end">
+                        <div class="text-emerald-400 text-sm font-semibold mb-1"><i class="fa-solid fa-mosque"></i> Pusat Ibadah</div>
+                        <h3 class="text-xl font-bold text-white">Masjid Utama Pesantren</h3>
+                        <p class="text-xs text-slate-300 mt-1 opacity-90">Kapasitas hingga 1.500 jamaah untuk ibadah shalat berjamaah dan halaqa Tahfizh.</p>
+                    </div>
+                </div>
+
+                <!-- Facility Item 3 -->
+                <div class="group relative rounded-3xl overflow-hidden shadow-md border border-slate-100 dark:border-slate-800">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800&auto=format&fit=crop" alt="Lab Komputer" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent p-6 flex flex-col justify-end">
+                        <div class="text-cyan-400 text-sm font-semibold mb-1"><i class="fa-solid fa-laptop-code"></i> Teknologi 2026</div>
+                        <h3 class="text-xl font-bold text-white">Lab Komputer & Multimedia</h3>
+                        <p class="text-xs text-slate-300 mt-1 opacity-90">Perangkat komputer modern berkecepatan tinggi untuk pembelajaran IT & koding.</p>
+                    </div>
+                </div>
+
+                <!-- Facility Item 4 -->
+                <div class="group relative rounded-3xl overflow-hidden shadow-md border border-slate-100 dark:border-slate-800">
+                    <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=800&auto=format&fit=crop" alt="Perpustakaan Digital" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent p-6 flex flex-col justify-end">
+                        <div class="text-emerald-400 text-sm font-semibold mb-1"><i class="fa-solid fa-book-open"></i> Literasi Luas</div>
+                        <h3 class="text-xl font-bold text-white">Perpustakaan Digital & Turats</h3>
+                        <p class="text-xs text-slate-300 mt-1 opacity-90">Koleksi ribuan kitab klasik, buku sains umum, serta jurnal digital interaktif.</p>
+                    </div>
+                </div>
+
+                <!-- Facility Item 5 -->
+                <div class="group relative rounded-3xl overflow-hidden shadow-md border border-slate-100 dark:border-slate-800">
+                    <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=800&auto=format&fit=crop" alt="Lapangan Olahraga" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent p-6 flex flex-col justify-end">
+                        <div class="text-amber-400 text-sm font-semibold mb-1"><i class="fa-solid fa-volleyball"></i> Olahraga & Sunnah</div>
+                        <h3 class="text-xl font-bold text-white">Lapangan Olahraga Terpadu</h3>
+                        <p class="text-xs text-slate-300 mt-1 opacity-90">Fasilitas Futsal, Basket, Badminton, Lapangan Panahan, dan Bela Diri.</p>
+                    </div>
+                </div>
+
+                <!-- Facility Item 6 -->
+                <div class="group relative rounded-3xl overflow-hidden shadow-md border border-slate-100 dark:border-slate-800">
+                    <img src="https://images.unsplash.com/photo-1567521464027-f127ff144326?q=80&w=800&auto=format&fit=crop" alt="Kantin Halal" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent p-6 flex flex-col justify-end">
+                        <div class="text-emerald-400 text-sm font-semibold mb-1"><i class="fa-solid fa-utensils"></i> Gizi Seimbang</div>
+                        <h3 class="text-xl font-bold text-white">Kantin & Dining Hall Halal</h3>
+                        <p class="text-xs text-slate-300 mt-1 opacity-90">Penyediaan makanan higienis, bergizi seimbang, dan diawasi tim nutrisi.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION ALUR PPDB 2026 -->
+    <section id="ppdb" class="py-20 relative bg-emerald-900 text-white overflow-hidden">
+        
+        <!-- Background Accents -->
+        <div class="absolute inset-0 islamic-pattern"></div>
+        <div class="absolute -bottom-20 -left-20 w-80 h-80 bg-emerald-500/20 rounded-full blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-extrabold tracking-widest text-amber-300 uppercase bg-emerald-800/80 border border-emerald-600 px-4 py-1.5 rounded-full">Prosedur Pendaftaran</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3 tracking-tight">
+                    Alur Pendaftaran PPDB 2026/2027
+                </h2>
+                <p class="text-emerald-100/80 mt-4 text-base sm:text-lg">
+                    Langkah mudah bergabung menjadi santri Ma'had Al Azhar Bi'ibadillah melalui sistem online terintegrasi.
+                </p>
+            </div>
+
+            <!-- 4 Steps Flow Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Step 1 -->
+                <div class="bg-emerald-800/60 backdrop-blur-md rounded-3xl p-6 border border-emerald-600/50 relative">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-400 text-emerald-950 font-black text-xl flex items-center justify-center mb-6 shadow-lg shadow-amber-400/20">
+                        1
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Pendaftaran Online</h3>
+                    <p class="text-xs text-emerald-100/80 leading-relaxed">
+                        Mengisi formulir biodata calon santri secara online dan melengkapi berkas administrasi awal.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-emerald-800/60 backdrop-blur-md rounded-3xl p-6 border border-emerald-600/50 relative">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-400 text-emerald-950 font-black text-xl flex items-center justify-center mb-6 shadow-lg shadow-amber-400/20">
+                        2
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Tes Seleksi Masuk</h3>
+                    <p class="text-xs text-emerald-100/80 leading-relaxed">
+                        Ujian bacaan Qur'an/hafalan, tes akademik, tes pemetaan potensi, serta wawancara wali murid.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-emerald-800/60 backdrop-blur-md rounded-3xl p-6 border border-emerald-600/50 relative">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-400 text-emerald-950 font-black text-xl flex items-center justify-center mb-6 shadow-lg shadow-amber-400/20">
+                        3
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Pengumuman Kelulusan</h3>
+                    <p class="text-xs text-emerald-100/80 leading-relaxed">
+                        Pengumuman hasil seleksi disampaikan secara transparan melalui portal website dan WhatsApp resmi.
+                    </p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="bg-emerald-800/60 backdrop-blur-md rounded-3xl p-6 border border-emerald-600/50 relative">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-400 text-emerald-950 font-black text-xl flex items-center justify-center mb-6 shadow-lg shadow-amber-400/20">
+                        4
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Daftar Ulang & Masuk</h3>
+                    <p class="text-xs text-emerald-100/80 leading-relaxed">
+                        Penyelesaian administrasi, konfirmasi ukuran seragam, dan kedatangan santri ke asrama.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Banner Call to Action inside PPDB -->
+            <div class="mt-12 bg-gradient-to-r from-emerald-950 via-emerald-800 to-emerald-950 rounded-3xl p-8 border border-amber-400/30 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-2xl">
+                <div class="text-center sm:text-left">
+                    <h4 class="text-xl sm:text-2xl font-bold text-amber-300">Gelombang I Kuota Terbatas!</h4>
+                    <p class="text-sm text-emerald-100/80 mt-1">Dapatkan diskon biaya pendaftaran early bird untuk calon santri pendaftar pertama.</p>
+                </div>
+                <button onclick="openRegistrationModal()" class="px-8 py-4 rounded-2xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-extrabold text-sm shadow-xl transition-transform hover:scale-105 whitespace-nowrap">
+                    Buka Formulir PPDB <i class="fa-solid fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION LOKASI & GOOGLE MAPS TERINTEGRASI -->
+    <section id="lokasi" class="py-20 relative bg-slate-50 dark:bg-slate-950 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-extrabold tracking-widest text-emerald-600 dark:text-emerald-400 uppercase bg-emerald-100 dark:bg-emerald-950 px-4 py-1.5 rounded-full">Peta & Alamat Sekolah</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-slate-100 mt-3 tracking-tight">
+                    Lokasi Kampus Pesantren
+                </h2>
+                <p class="text-slate-600 dark:text-slate-400 mt-4 text-base sm:text-lg">
+                    Temukan lokasi resmi kampus MTs / Ma'had Al Azhar Bi'ibadillah di Tapanuli Selatan, Sumatera Utara.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-8 items-stretch">
+                
+                <!-- Left Info Card -->
+                <div class="lg:col-span-5 glass-card rounded-3xl p-8 border border-emerald-100 dark:border-slate-800 shadow-xl flex flex-col justify-between">
+                    <div class="space-y-6">
+                        <div>
+                            <span class="inline-block px-3 py-1 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 font-bold text-xs mb-3">
+                                <i class="fa-solid fa-map-pin mr-1"></i> MTs Al-Azhar Bi'ibadillah
+                            </span>
+                            <h3 class="text-2xl font-extrabold text-slate-900 dark:text-slate-100">Alamat Lengkap</h3>
+                        </div>
+
+                        <div class="space-y-4 text-sm text-slate-600 dark:text-slate-300">
+                            <div class="flex items-start gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300 flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <strong class="block text-slate-900 dark:text-slate-100">Alamat Sekolah:</strong>
+                                    <span>789P+MX7, Tahalak Ujung Gading, Kec. Batang Angkola, Kabupaten Tapanuli Selatan, Sumatera Utara 22733</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300 flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <strong class="block text-slate-900 dark:text-slate-100">Telepon / WhatsApp Layanan:</strong>
+                                    <span>+62 813-7642-3426</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300 flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <div>
+                                    <strong class="block text-slate-900 dark:text-slate-100">Jam Operasional Kantor Sekretariat:</strong>
+                                    <span>Senin - Sabtu: 08.00 - 16.00 WIB</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Direct Google Maps Link -->
+                    <div class="pt-6 mt-6 border-t border-slate-200 dark:border-slate-800">
+                        <a href="https://maps.google.com/?cid=14554886124839816488&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" rel="noopener noreferrer" class="w-full py-4 px-6 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-lg shadow-emerald-600/30 flex items-center justify-center gap-3 transition-transform hover:scale-[1.02]">
+                            <i class="fa-solid fa-diamond-turn-right text-amber-300 text-lg"></i>
+                            <span>Buka Navigasi Google Maps</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Map Embed Screen -->
+                <div class="lg:col-span-7 rounded-3xl overflow-hidden shadow-2xl border border-slate-200 dark:border-slate-800 min-h-[380px] relative group">
+                    <!-- Google Maps Embed iFrame -->
+                    <iframe 
+                        title="Peta Lokasi MTs Al-Azhar Bi'ibadillah"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.816823377229!2d99.3375!3d1.1235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302c0676fa916f6f%3A0xca0357d0c156cd28!2sMTs%20Al-Azhar%20Bi&#39;ibadillah!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
+                        class="w-full h-full min-h-[400px] border-0 filter grayscale-[20%] contrast-[105%] group-hover:grayscale-0 transition-all duration-500" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION TESTIMONI -->
+    <section class="py-20 relative bg-white dark:bg-slate-900 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-extrabold tracking-widest text-emerald-600 dark:text-emerald-400 uppercase bg-emerald-100 dark:bg-emerald-950 px-4 py-1.5 rounded-full">Kata Mereka</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-slate-100 mt-3 tracking-tight">
+                    Testimoni Wali Santri & Alumni
+                </h2>
+                <p class="text-slate-600 dark:text-slate-400 mt-4 text-base sm:text-lg">
+                    Kepercayaan dan pengalaman berharga dari keluarga besar Ma'had Al Azhar Bi'ibadillah.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="glass-card rounded-3xl p-6 border border-emerald-100 dark:border-slate-800 shadow-md flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Alhamdulillah anak saya dalam 2 tahun di Ma'had Al Azhar sudah hafal 12 Juz dengan tajwid yang sangat teratur. Karakter dan kemandiriannya pun tumbuh pesat."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-100 dark:border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center text-sm">
+                            H
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-slate-900 dark:text-slate-100">H. Ahmad Hasibuan</div>
+                            <div class="text-xs text-slate-500 dark:text-slate-400">Wali Santri Kelas XI MA</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="glass-card rounded-3xl p-6 border border-emerald-100 dark:border-slate-800 shadow-md flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Bekal Bahasa Arab dan pemahaman Kitab Kuning dari Ma'had menjadi modal utama saya saat diterima kuliah di Timur Tengah. Terima kasih Asatidzah Al-Azhar."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-100 dark:border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-amber-500 text-white font-bold flex items-center justify-center text-sm">
+                            M
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-slate-900 dark:text-slate-100">Muhammad Siregar</div>
+                            <div class="text-xs text-slate-500 dark:text-slate-400">Alumni (Mahasiswa Al-Azhar Kairo)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="glass-card rounded-3xl p-6 border border-emerald-100 dark:border-slate-800 shadow-md flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Lingkungan asrama yang aman, disiplin, dan pengajar yang sangat mengayomi. Tempat terbaik untuk pendidikan putra-putri di Tapanuli Selatan."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-100 dark:border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-teal-600 text-white font-bold flex items-center justify-center text-sm">
+                            S
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-slate-900 dark:text-slate-100">Siti Rahmah, S.Pd</div>
+                            <div class="text-xs text-slate-500 dark:text-slate-400">Wali Santri MTs</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION FAQ ACCORDION -->
+    <section id="faq" class="py-20 relative bg-slate-50 dark:bg-slate-950 transition-colors">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-extrabold tracking-widest text-emerald-600 dark:text-emerald-400 uppercase bg-emerald-100 dark:bg-emerald-950 px-4 py-1.5 rounded-full">Pertanyaan Populer</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-slate-100 mt-3 tracking-tight">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-slate-600 dark:text-slate-400 mt-4 text-base">
+                    Informasi penting seputar proses pendaftaran, kurikulum, dan kehidupan asrama santri.
+                </p>
+            </div>
+
+            <!-- Accordion List -->
+            <div class="space-y-4">
+                
+                <!-- FAQ Item 1 -->
+                <div class="glass-card rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden">
+                    <button onclick="toggleFaq(1)" class="w-full p-6 text-left font-bold text-slate-900 dark:text-slate-100 flex items-center justify-between gap-4">
+                        <span>Kapan pendaftaran santri baru (PPDB 2026/2027) dibuka?</span>
+                        <i id="faq-icon-1" class="fa-solid fa-chevron-down text-emerald-600 transition-transform"></i>
+                    </button>
+                    <div id="faq-content-1" class="hidden px-6 pb-6 text-sm text-slate-600 dark:text-slate-300 leading-relaxed border-t border-slate-100 dark:border-slate-800/50 pt-4">
+                        Pendaftaran Gelombang I dibuka secara online mulai Oktober 2025 hingga Maret 2026. Anda dapat langsung mendaftar secara mandiri melalui tombol "Daftar PPDB 2026" di halaman website ini.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="glass-card rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden">
+                    <button onclick="toggleFaq(2)" class="w-full p-6 text-left font-bold text-slate-900 dark:text-slate-100 flex items-center justify-between gap-4">
+                        <span>Apakah calon santri yang belum lancar membaca Al-Qur'an dapat diterima?</span>
+                        <i id="faq-icon-2" class="fa-solid fa-chevron-down text-emerald-600 transition-transform"></i>
+                    </button>
+                    <div id="faq-content-2" class="hidden px-6 pb-6 text-sm text-slate-600 dark:text-slate-300 leading-relaxed border-t border-slate-100 dark:border-slate-800/50 pt-4">
+                        Ya. Ma'had Al Azhar Bi'ibadillah menyediakan kelas matrikulasi khusus Tahsin dan pemantapan Tajwid bagi calon santri di awal masa orientasi untuk menyetarakan kemampuan membaca Al-Qur'an.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="glass-card rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden">
+                    <button onclick="toggleFaq(3)" class="w-full p-6 text-left font-bold text-slate-900 dark:text-slate-100 flex items-center justify-between gap-4">
+                        <span>Bagaimana kebijakan kunjungan orang tua ke asrama santri?</span>
+                        <i id="faq-icon-3" class="fa-solid fa-chevron-down text-emerald-600 transition-transform"></i>
+                    </button>
+                    <div id="faq-content-3" class="hidden px-6 pb-6 text-sm text-slate-600 dark:text-slate-300 leading-relaxed border-t border-slate-100 dark:border-slate-800/50 pt-4">
+                        Kunjungan orang tua dijadwalkan secara teratur setiap 2 minggu sekali pada hari Ahad. Hal ini bertujuan agar santri fokus dan cepat beradaptasi dengan kemandirian di lingkungan pesantren.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="glass-card rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden">
+                    <button onclick="toggleFaq(4)" class="w-full p-6 text-left font-bold text-slate-900 dark:text-slate-100 flex items-center justify-between gap-4">
+                        <span>Apa saja fasilitas umum yang didapatkan santri di asrama?</span>
+                        <i id="faq-icon-4" class="fa-solid fa-chevron-down text-emerald-600 transition-transform"></i>
+                    </button>
+                    <div id="faq-content-4" class="hidden px-6 pb-6 text-sm text-slate-600 dark:text-slate-300 leading-relaxed border-t border-slate-100 dark:border-slate-800/50 pt-4">
+                        Santri mendapatkan fasilitas kamar ber-AC, tempat tidur & kasur pribadi, lemari pakaian, konsumsi 3 kali sehari makanan bergizi, layanan kesehatan poskestren, serta akses perpustakaan digital dan lapangan olahraga.
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-slate-400 pt-16 pb-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-slate-800">
+                
+                <!-- Brand Info Column -->
+                <div class="lg:col-span-5 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold text-xl">
+                            <i class="fa-solid fa-mosque"></i>
+                        </div>
+                        <span class="font-black text-xl text-white tracking-wide">MA'HAD AL AZHAR BI'IBADILLAH</span>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed max-w-md">
+                        Lembaga Pendidikan Islam Terpadu Modern berbasis Tahfizh Al-Qur'an bersanad, Bahasa Arab & Inggris, serta IPTEK Unggulan 2026.
+                    </p>
+                    <div class="flex gap-3 pt-2">
+                        <a href="#" aria-label="Facebook Page" class="w-10 h-10 rounded-xl bg-slate-900 hover:bg-emerald-600 text-slate-300 hover:text-white flex items-center justify-center transition-colors">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram Profile" class="w-10 h-10 rounded-xl bg-slate-900 hover:bg-emerald-600 text-slate-300 hover:text-white flex items-center justify-center transition-colors">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" aria-label="YouTube Channel" class="w-10 h-10 rounded-xl bg-slate-900 hover:bg-emerald-600 text-slate-300 hover:text-white flex items-center justify-center transition-colors">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="https://wa.me/6281376423426" aria-label="WhatsApp Contact" target="_blank" class="w-10 h-10 rounded-xl bg-slate-900 hover:bg-emerald-600 text-slate-300 hover:text-white flex items-center justify-center transition-colors">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Nav Links -->
+                <div class="lg:col-span-3 space-y-3">
+                    <h4 class="text-white font-bold text-base tracking-wider uppercase">Tautan Pintar</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#beranda" class="hover:text-emerald-400 transition-colors">Beranda Utaman</a></li>
+                        <li><a href="#profil" class="hover:text-emerald-400 transition-colors">Profil Visi & Misi</a></li>
+                        <li><a href="#program" class="hover:text-emerald-400 transition-colors">Program Tahfizh & MTs/MA</a></li>
+                        <li><a href="#fasilitas" class="hover:text-emerald-400 transition-colors">Fasilitas Asrama</a></li>
+                        <li><a href="#lokasi" class="hover:text-emerald-400 transition-colors">Peta & Google Maps</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter / Info Section -->
+                <div class="lg:col-span-4 space-y-4">
+                    <h4 class="text-white font-bold text-base tracking-wider uppercase">Informasi PPDB 2026</h4>
+                    <p class="text-xs text-slate-400">Dapatkan katalog brosur lengkap dan rincian biaya pendaftaran melalui WhatsApp.</p>
+                    <form onsubmit="handleNewsletter(event)" class="space-y-2">
+                        <input type="text" id="newsletterPhone" placeholder="Nomor WhatsApp (Contoh: 08123456...)" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500">
+                        <button type="submit" class="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-sm transition-colors">
+                            Minta Brosur Digital
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- Copyright Notice -->
+            <div class="pt-8 text-center text-xs text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <p>&copy; 2026 Ma'had Al Azhar Bi'ibadillah. All Rights Reserved.</p>
+                <p>Tahalak Ujung Gading, Batang Angkola, Tapanuli Selatan, Sumatra Utara.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL REGISTRATION / PPDB FORM -->
+    <div id="registrationModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md overflow-y-auto">
+        <div class="glass-card bg-white dark:bg-slate-900 rounded-3xl max-w-lg w-full p-6 sm:p-8 border border-emerald-500/30 shadow-2xl relative my-8">
+            
+            <!-- Close Button -->
+            <button onclick="closeRegistrationModal()" class="absolute top-6 right-6 w-9 h-9 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-500 hover:text-slate-900 dark:hover:text-white flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <!-- Form Header -->
+            <div class="mb-6">
+                <span class="text-xs font-bold text-amber-500 uppercase tracking-widest">Formulir Pendaftaran</span>
+                <h3 class="text-2xl font-extrabold text-slate-900 dark:text-slate-100 mt-1">PPDB Online 2026/2027</h3>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Isi formulir singkat di bawah ini. Tim panitia PPDB akan langsung menghubungi Anda via WhatsApp.</p>
+            </div>
+
+            <!-- Notification Alert Box Inside Modal -->
+            <div id="modalAlert" class="hidden mb-4 p-4 rounded-xl text-xs font-medium"></div>
+
+            <!-- Form Body -->
+            <form id="ppdbForm" onsubmit="submitPpdbForm(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Nama Lengkap Calon Santri *</label>
+                    <input type="text" required placeholder="Sesuai Akta Kelahiran" class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm focus:outline-none focus:border-emerald-500 text-slate-900 dark:text-slate-100">
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Jenjang Tujuan *</label>
+                        <select required class="w-full px-3 py-3 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm focus:outline-none focus:border-emerald-500 text-slate-900 dark:text-slate-100">
+                            <option value="">Pilih Jenjang</option>
+                            <option value="MTs">MTs (Tsanawiyah)</option>
+                            <option value="MA">MA (Aliyah)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Jenis Kelamin *</label>
+                        <select required class="w-full px-3 py-3 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm focus:outline-none focus:border-emerald-500 text-slate-900 dark:text-slate-100">
+                            <option value="">Pilih Sesuai</option>
+                            <option value="L">Laki-laki (Bani)</option>
+                            <option value="P">Perempuan (Banat)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Nama Wali / Orang Tua *</label>
+                    <input type="text" required placeholder="Nama Orang Tua / Wali" class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm focus:outline-none focus:border-emerald-500 text-slate-900 dark:text-slate-100">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Nomor WhatsApp Aktif *</label>
+                    <input type="tel" required placeholder="081234567890" class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm focus:outline-none focus:border-emerald-500 text-slate-900 dark:text-slate-100">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Kota / Kabupaten Asal *</label>
+                    <input type="text" required placeholder="Contoh: Tapanuli Selatan, Padangsidimpuan, Medan" class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm focus:outline-none focus:border-emerald-500 text-slate-900 dark:text-slate-100">
+                </div>
+
+                <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white font-bold text-sm shadow-lg shadow-emerald-600/30 transition-transform active:scale-95 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>Kirim Formulir Pendaftaran</span>
+                </button>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC & INTERACTION -->
+    <script>
+        // Dark Mode Toggle Logic
+        function toggleDarkMode() {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+
+        // Check stored theme preference on load
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+
+        // Mobile Menu Drawer Logic
+        function toggleMobileMenu() {
+            const drawer = document.getElementById('mobileDrawer');
+            const icon = document.getElementById('menuIcon');
+            drawer.classList.toggle('hidden');
+            
+            if (drawer.classList.contains('hidden')) {
+                icon.className = 'fa-solid fa-bars text-xl';
+            } else {
+                icon.className = 'fa-solid fa-xmark text-xl';
+            }
+        }
+
+        // Modal PPDB Registration Logic
+        function openRegistrationModal() {
+            document.getElementById('registrationModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeRegistrationModal() {
+            document.getElementById('registrationModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // FAQ Accordion Toggle Logic
+        function toggleFaq(id) {
+            const content = document.getElementById(`faq-content-${id}`);
+            const icon = document.getElementById(`faq-icon-${id}`);
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Handle Form Submission
+        function submitPpdbForm(e) {
+            e.preventDefault();
+            const alertBox = document.getElementById('modalAlert');
+            
+            alertBox.className = "mb-4 p-4 rounded-xl text-xs font-semibold bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-950 dark:text-emerald-300 dark:border-emerald-800 flex items-center gap-2";
+            alertBox.innerHTML = '<i class="fa-solid fa-circle-check text-lg"></i> Pendaftaran Berhasil Dikirim! Panitia PPDB Ma\'had Al Azhar akan menghubungi nomor WhatsApp Anda dalam kurun waktu 1x24 jam.';
+            alertBox.classList.remove('hidden');
+
+            document.getElementById('ppdbForm').reset();
+            
+            setTimeout(() => {
+                alertBox.classList.add('hidden');
+                closeRegistrationModal();
+            }, 4000);
+        }
+
+        // Handle Newsletter Submission
+        function handleNewsletter(e) {
+            e.preventDefault();
+            const phoneInput = document.getElementById('newsletterPhone');
+            const phone = phoneInput.value;
+            
+            if (phone) {
+                // Direct to WhatsApp
+                const text = encodeURIComponent(`Assalamu'alaikum Warahmatullah, Saya ingin meminta Brosur Digital & Rincian Biaya PPDB 2026 Ma'had Al Azhar Bi'ibadillah.`);
+                window.open(`https://wa.me/6281376423426?text=${text}`, '_blank');
+                phoneInput.value = '';
+            }
+        }
+    </script>
+</body>
+</html>
